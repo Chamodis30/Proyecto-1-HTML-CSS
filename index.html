@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio personal de estudiante, con información, proyectos y formulario de contacto.">
+  <meta name="author" content="Jeremy">
+  <meta name="keywords" content="portafolio, proyectos, estudiante, desarrollo web, HTML, CSS">
+  <title>Portafolio de Jeremy Gonzalez</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Hola, soy Jeremy Gonzalez</h1>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#portafolio">Portafolio</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Hola, soy <span>Jeremy</span></h2>
+    <p>Soy estudiante de desarrollo de aplicaciones web, me encantan los videojuegos y el cine.</p>
+  </section>
+
+  <main>
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <p>Actualmente estoy estudiando lenguajes como HTML y CSS, y me gusta bastante programar y aprender nuevos lenguajes.</p>
+      <img src="https://via.placeholder.com/300x200" alt="Foto representativa del autor">
+    </section>
+
+    <section id="portafolio">
+      <h2>Proyectos</h2>
+      <div class="grid-portafolio">
+        <article>
+          <img src="https://www.google.com/imgres?q=aplicacion%20web&imgurl=https%3A%2F%2Fwww.b2chat.io%2Fwp-content%2Fuploads%2F2022%2F07%2Fmockup-de-una-aplicacion-web.webp&imgrefurl=https%3A%2F%2Fwww.b2chat.io%2Fblog%2Faplicaciones%2Fque-es-aplicacion-web-como-funciona%2F&docid=0ZGSe5j7ll9MTM&tbnid=VnwgS4WZ5TMXnM&vet=12ahUKEwiz-_-Yo7iQAxUqNPsDHUFIDf8QM3oECB4QAA..i&w=1360&h=680&hcb=2&ved=2ahUKEwiz-_-Yo7iQAxUqNPsDHUFIDf8QM3oECB4QAA" alt="Proyecto 1">
+          <h3>Proyecto 1</h3>
+          <p>Aplicación web sencilla para gestión de tareas.</p>
+        </article>
+        <article>
+          <img src="https://www.google.com/imgres?q=landing%20page&imgurl=https%3A%2F%2Fvenngage-wordpress-es.s3.amazonaws.com%2Fuploads%2F2023%2F09%2FEjemplos-de-paginas-de-destino.png&imgrefurl=https%3A%2F%2Fes.venngage.com%2Fblog%2Flanding-page-ejemplos%2F&docid=_H1l-jHMRxPuWM&tbnid=tLNFVkBMs7QDHM&vet=12ahUKEwiv46aso7iQAxWpUaQEHXVAFAcQM3oECB0QAA..i&w=3300&h=1843&hcb=2&ved=2ahUKEwiv46aso7iQAxWpUaQEHXVAFAcQM3oECB0QAA" alt="Proyecto 2">
+          <h3>Proyecto 2</h3>
+          <p>Landing page moderna con diseño responsive.</p>
+        </article>
+        <article>
+          <img src="https://www.google.com/imgres?q=galeria%20de%20fotos&imgurl=https%3A%2F%2Fcdn.raiolanetworks.com%2Fblog%2Fwp-content%2Fuploads%2Fgaleria-de-fotos.jpg&imgrefurl=https%3A%2F%2Fraiolanetworks.com%2Fblog%2Fgaleria-de-imagenes-web%2F&docid=BrWVOwXDhD8TcM&tbnid=9kFy3KWuhBKkIM&vet=12ahUKEwiLlf--o7iQAxVWcKQEHXy2IhAQM3oECCEQAA..i&w=798&h=504&hcb=2&ved=2ahUKEwiLlf--o7iQAxVWcKQEHXy2IhAQM3oECCEQAA" alt="Proyecto 3">
+          <h3>Proyecto 3</h3>
+          <p>Galería de fotos creada con CSS Grid.</p>
+        </article>
+        <article>
+          <img src="https://www.google.com/imgres?q=blog%20personal&imgurl=https%3A%2F%2Fgeekland.eu%2Fwp-content%2Fuploads%2F2019%2F04%2Frecomiendo-leer-blogs-personales.jpg&imgrefurl=https%3A%2F%2Fgeekland.eu%2Frecomiendo-leer-blogs-personales%2F&docid=_uc7LQOxhCtDUM&tbnid=oiRfEpR2thPeUM&vet=12ahUKEwjgnP7Ro7iQAxWSVaQEHftIA0QQM3oECCMQAA..i&w=900&h=490&hcb=2&ved=2ahUKEwjgnP7Ro7iQAxWSVaQEHftIA0QQM3oECCMQAA" alt="Proyecto 4">
+          <h3>Proyecto 4</h3>
+          <p>Blog personal con estructura semántica.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje..." required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mi Portafolio</p>
+    <ul class="social">
+      <li><a href="https://github.com/Chamodis30">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/jeremy-gonz%C3%A1lez-b62608228/">LinkedIn</a></li>
+      <li><a href="https://www.instagram.com/j3r3my_30/">Instagram</a></li>
+    </ul>
+  </footer>
+</body>
+</html>
